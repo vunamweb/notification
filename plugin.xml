@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.android.notification"
+        id="com.csc.integralpos"
         version="0.7.0">
 
-  <name>Notification</name>
+  <name>iPosAppPlugin</name>
 
   <engines>
     <engine name="cordova" version=">=3.4.0"/>
@@ -18,12 +18,12 @@
   <platform name="android">
 
     <config-file target="res/xml/config.xml" parent="/*">
-      <feature name="Notification">
-        <param name="android-package" value="com.android.notification.plugin.Notification"/>
+      <feature name="iPosAppPlugin">
+        <param name="android-package" value="com.csc.integralpos.app.IPOSPlugin"/>
       </feature>
     </config-file>
 
-    <source-file src="src/android/Notification.java" target-dir="src/com/android/notification/plugin/"/>
+    <source-file src="src/android/IPOSPlugin.java" target-dir="src/com/csc/integralpos/app/"/>
   </platform>
 
   <platform name="ios">
